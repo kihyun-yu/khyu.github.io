@@ -1,7 +1,6 @@
 import { fontStyle } from '@/data/website.config';
 import './globals.css';
 import { websiteInfo } from '@/data/website.config';
-import Header from '@/components/Header';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
 const fontClasses = {
@@ -28,7 +27,6 @@ export default function RootLayout({
           defaultTheme='light'
           disableTransitionOnChange
         >
-          <Header />
           {children}
         </ThemeProvider>
       </body>
