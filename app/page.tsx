@@ -71,18 +71,6 @@ const experienceList = [
   },
 ];
 
-const languagesAndTechnicalSkillsList = [
-  'Korean (native), English (conversational)',
-  'C/C++, Python, Pytorch, LaTeX',
-];
-
-const otherActivitiesList = [
-  {
-    activity: 'Volunteer Math Mentor (03/2018 - 12/2018)',
-    details: ['Provided small-group math mentoring for middle and high school students'],
-  },
-];
-
 export default function Page() {
   return (
     <main className='md:w-[40rem] m-auto px-8 mt-32 flex flex-col gap-10 mb-20'>
@@ -166,33 +154,6 @@ export default function Page() {
                   <h2 className='text-base font-medium'>{item.lab}</h2>
                   <span className='text-sm text-neutral-500'>{item.location}</span>
                 </div>
-                <ul className='list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300'>
-                  {item.details.map((detail) => (
-                    <li key={detail}>{detail}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-      {homepageSection.LanguagesAndTechnicalSkillsSection && (
-        <section className='flex flex-col gap-3'>
-          <h1 className='text-2xl font-semibold'>Languages and Technical Skills</h1>
-          <ul className='list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300'>
-            {languagesAndTechnicalSkillsList.map((item) => (
-              <li key={item}>{item}</li>
-            ))}
-          </ul>
-        </section>
-      )}
-      {homepageSection.OtherActivitiesSection && (
-        <section className='flex flex-col gap-3'>
-          <h1 className='text-2xl font-semibold'>Other Activities</h1>
-          <div className='flex flex-col gap-4'>
-            {otherActivitiesList.map((item) => (
-              <div key={item.activity} className='flex flex-col gap-1'>
-                <h2 className='text-base font-medium'>{item.activity}</h2>
                 <ul className='list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300'>
                   {item.details.map((detail) => (
                     <li key={detail}>{detail}</li>

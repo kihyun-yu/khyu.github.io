@@ -29,8 +29,6 @@ export interface HomepageSection {
   TeachingExperienceSection?: boolean;
   HonorsSection?: boolean;
   ExperienceSection?: boolean;
-  LanguagesAndTechnicalSkillsSection?: boolean;
-  OtherActivitiesSection?: boolean;
   NewsSection?: boolean;
   SelectedPublicationsSection?: boolean;
   ProjectSection?: boolean;
@@ -71,8 +69,6 @@ export const homepageSection: HomepageSection = {
   TeachingExperienceSection: true,
   HonorsSection: true,
   ExperienceSection: true,
-  LanguagesAndTechnicalSkillsSection: true,
-  OtherActivitiesSection: true,
   NewsSection: false,
   SelectedPublicationsSection: true,
   ProjectSection: false,
