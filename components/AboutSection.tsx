@@ -17,8 +17,6 @@ export default function AboutSection() {
             </a>
           </h2>
           <div className='text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed'>
-            <p>{personalInfo.address[0]}</p>
-            <p>{personalInfo.address[1]}</p>
             <p>
               Email:{' '}
               <a

@@ -40,7 +40,7 @@ export type FontStyle = "sans" | "serif" | "mono";
 
 export const personalInfo: PersonalInfo = {
   name: "Kihyun Yu",
-  role: "M.S.-Ph.D. Student",
+  role: "Ph.D. Student",
   university: "KAIST",
   universityWebsite: "https://www.kaist.ac.kr/en/",
   address: [
