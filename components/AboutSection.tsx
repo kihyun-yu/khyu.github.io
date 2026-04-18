@@ -4,10 +4,7 @@ import AboutMd from '@/data/home/About.mdx';
 import { personalInfo } from '@/data/website.config';
 import {
   RiMailLine,
-  RiGithubFill,
   RiLinkedinBoxFill,
-  RiTwitterXLine,
-  RiGoogleFill,
 } from '@remixicon/react';
 import { Button } from './ui/button';
 
@@ -42,12 +39,6 @@ export default function AboutSection() {
                   <Link href={social.url} target='_blank'>
                     {social.name === 'Email' ? (
                       <RiMailLine size={16} />
-                    ) : social.name === 'GitHub' ? (
-                      <RiGithubFill size={16} />
-                    ) : social.name === 'Twitter' ? (
-                      <RiTwitterXLine size={16} />
-                    ) : social.name === 'Google Scholar' ? (
-                      <RiGoogleFill size={16} />
                     ) : social.name === 'ORCID' ? (
                       <svg
                         viewBox='0 0 24 24'

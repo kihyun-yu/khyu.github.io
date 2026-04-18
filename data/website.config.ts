@@ -32,27 +32,23 @@ export interface HomepageSection {
 export type FontStyle = "sans" | "serif" | "mono";
 
 export const personalInfo: PersonalInfo = {
-  name: "Hiroshi Ishii",
+  name: "Kihyun Yu",
   profilePicture: "/profile.jpg", //optional
-  role: "Professor",
-  university: "MIT Media Lab",
-  universityWebsite: "https://www.zju.edu.cn/",
+  role: "M.S.-Ph.D. Student",
+  university: "KAIST",
+  universityWebsite: "https://www.kaist.ac.kr/en/",
   socialMedia: [
-    { name: "Email", url: "https://linkedin.com" },
-    { name: "Twitter", url: "https://twitter.com/anxndsgn" },
+    { name: "Email", url: "mailto:khyu99@kaist.ac.kr" },
     {
-      name: "GitHub",
-      url: "https://github.com/anxndsgn/academic-homepage-template",
+      name: "Google Scholar",
+      url: "https://scholar.google.com/citations?user=ya1HqdsAAAAJ&hl=en",
     },
-    { name: "LinkedIn", url: "https://linkedin.com" },
-    { name: "ORCID", url: "https://orcid" },
-    { name: "Google Scholar", url: "https://scholar.google.com" },
   ],
 };
 
 export const websiteInfo: WebsiteInfo = {
   title: personalInfo.name,
-  description: "HCI researcher",
+  description: "Reinforcement learning theory researcher",
 };
 
 export const navigations: NavigationItem[] = [
@@ -66,7 +62,7 @@ export const homepageSection: HomepageSection = {
   AboutSection: true,
   NewsSection: true,
   SelectedPublicationsSection: true,
-  // ProjectSection: true,
+  ProjectSection: false,
 };
 
 export const fontStyle: FontStyle = "sans"; // "sans" | "serif" | "mono"
