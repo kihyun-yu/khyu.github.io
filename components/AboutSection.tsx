@@ -16,7 +16,7 @@ export default function AboutSection() {
                 rel='noopener noreferrer'
                 className='underline underline-offset-2'
               >
-                cv
+                [cv]
               </a>{' '}
               <a
                 href='https://scholar.google.com/citations?user=ya1HqdsAAAAJ&hl=en'
@@ -24,7 +24,7 @@ export default function AboutSection() {
                 rel='noopener noreferrer'
                 className='underline underline-offset-2'
               >
-                google scholar
+                [google scholar]
               </a>
             </p>
           </div>
