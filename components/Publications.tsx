@@ -54,7 +54,7 @@ export default function Publications({ bibtex }: PublicationsProps) {
         );
         return (
           <li key={item.entryTags.title} className=' list-decimal'>
-            <h2 className='text-base font-medium dark:text-neutral-50'>
+            <h2 className='text-base font-normal dark:text-neutral-50'>
               {item.entryTags.url ? (
                 <a
                   href={item.entryTags.url}

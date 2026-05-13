@@ -111,7 +111,7 @@ export default function Page() {
             {educationList.map((item) => (
               <div key={item.institution} className='flex flex-col gap-1'>
                 <div className='flex items-start justify-between gap-2'>
-                  <h2 className='text-base font-medium'>{item.institution}</h2>
+                  <h2 className='text-base font-normal'>{item.institution}</h2>
                   <span className='text-sm text-neutral-500'>{item.location}</span>
                 </div>
                 <ul className='list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300'>
