@@ -62,7 +62,7 @@ export const websiteInfo: WebsiteInfo = {
 
 export const navigations: NavigationItem[] = [
   { name: "Publications", route: "/publications" },
-  { name: "CV", route: "/cv/cv.pdf" },
+  { name: "CV", route: "/cv.pdf" },
 ];
 
 export const homepageSection: HomepageSection = {

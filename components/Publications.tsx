@@ -1,5 +1,4 @@
 import bibtexParse from 'bibtex-parse-js';
-import Image from 'next/image';
 import { personalInfo } from '@/data/website.config';
 import { CustomMDX } from '@/components/mdx';
 
@@ -78,24 +77,6 @@ export default function Publications({ bibtex }: PublicationsProps) {
                   item.entryTags.booktitle?.replace(/{|}/g, '')}
               </span>
               <span className='mr-2'>{item.entryTags.year}</span>
-              {item.entryTags.award &&
-                (item.entryTags.award === 'Honorable Mention' ? (
-                  <Image
-                    src='/honor.jpg'
-                    alt='Honorable Mention'
-                    width={20}
-                    height={20}
-                    className=' h-5 w-5 inline-block mr-2'
-                  />
-                ) : (
-                  <Image
-                    src='/best.jpg'
-                    alt='Honorable Mention'
-                    width={20}
-                    height={20}
-                    className='h-5 w-5 inline-block mr-2'
-                  />
-                ))}
               <span className='font-bold h-5'>{item.entryTags.award}</span>
             </div>
           </li>

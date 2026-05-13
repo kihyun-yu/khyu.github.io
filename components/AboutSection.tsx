@@ -1,17 +1,19 @@
 import AboutMd from '@/data/home/About.mdx';
 import { personalInfo } from '@/data/website.config';
+import Image from 'next/image';
+import profileImage from '@/profile.jpg';
 
 export default function AboutSection() {
   return (
     <section className='flex flex-col gap-8'>
-      <div className='flex flex-col gap-8 md:flex-row md:justify-between'>
+      <div className='flex flex-col-reverse gap-8 md:flex-row md:items-start md:justify-between'>
         <div className='flex flex-col gap-3'>
           <h1 className='text-4xl font-semibold'>{personalInfo.name}</h1>
           <div className='text-sm text-neutral-600 dark:text-neutral-300 leading-relaxed'>
             <p>Email: {personalInfo.email}</p>
             <p>
               <a
-                href='/cv/cv.pdf'
+                href='/cv.pdf'
                 target='_blank'
                 rel='noopener noreferrer'
                 className='underline underline-offset-2'
@@ -29,6 +31,12 @@ export default function AboutSection() {
             </p>
           </div>
         </div>
+        <Image
+          src={profileImage}
+          alt={personalInfo.name}
+          priority
+          className='h-36 w-36 rounded-md object-cover md:h-40 md:w-40'
+        />
       </div>
       <article className='flex flex-col gap-2 text-pretty'>
         <AboutMd />
